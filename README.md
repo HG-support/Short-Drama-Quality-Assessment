@@ -18,7 +18,7 @@ Videos are collected from [Hongguo](https://novelquickapp.com/) short-drama plat
 
 ### 2. Human-Centric Quality Score
 
-We define a **hot value** derived from post-exposure user signals to measure the performance of a short drama. We normalize eight non-ratio indicators (i.e., *daily average watch time, daily average UV, favorites, likes, six-month cumulative watch time, six-month cumulative UV, comments,* and *search*) $x_i$, to a score $ u_i $, in the range $[5, 100+)$, as defined below:
+We define a **hot value** derived from post-exposure user signals to measure the performance of a short drama. We normalize eight non-ratio indicators (i.e., *daily average watch time, daily average UV, favorites, likes, six-month cumulative watch time, six-month cumulative UV, comments,* and *search*)$x_i$, to a score $u_i$, in the range $[5, 100+)$, as defined below:
 
 $$
 u_i =
@@ -29,7 +29,7 @@ u_i =
 \end{cases}
 $$
 
-Here, $ x_i $, $ x_{\min}^i $, $ x_{p30}^i $, $ x_{p93}^i $, and $ x_{10}^i $ denote the raw value, minimum value, 30th percentile, 93rd percentile, and 10th-ranked value of the indicator, respectively. For the ratio indicator completion rate $ x_9 $, we apply a capped piecewise normalization to obtain its score $ u_9 $:
+Here, $x_i$, $x_{\min}^i$, $x_{p30}^i$, $x_{p93}^i$, and $x_{10}^i$ denote the raw value, minimum value, 30th percentile, 93rd percentile, and 10th-ranked value of the indicator, respectively. For the ratio indicator completion rate $x_9$, we apply a capped piecewise normalization to obtain its score $u_9$:
 
 $$
 u_9 =
@@ -40,7 +40,7 @@ u_9 =
 \end{cases}
 $$
 
-Here, $ u_9 $ is the normalized score for the completion rate $ x_9 $ with a range of $[3, 100]$. The hot value $ H $ is obtained by a weighted sum of the nine indicator scores, where $ \{w_i\}_{i=1}^9 $ are their corresponding weights:
+Here, $u_9$ is the normalized score for the completion rate$x_9$with a range of $[3, 100]$. The hot value$H$is obtained by a weighted sum of the nine indicator scores, where $\{w_i\}_{i=1}^9$ are their corresponding weights:
 
 $$
 H = \sum_{i=1}^{9} w_i \cdot u_i, \quad \text{where } \sum_{i=1}^{9} w_i = 1.
@@ -93,5 +93,6 @@ python evaluation/eval.py --input_path1 YOUR_RESULT_JSON_PATH --input_path2 GT_J
 
 
 ![result](./assets/result.png)
+
 
 
