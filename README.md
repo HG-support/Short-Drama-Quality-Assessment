@@ -1,3 +1,7 @@
+<script type="text/javascript"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 # Short-Drama Quality Assessment — Evaluation Set
 
 ------
@@ -90,5 +94,6 @@ python evaluation/eval.py --input_path1 YOUR_RESULT_JSON_PATH --input_path2 GT_J
 ------
 
 ## 🍭 Result
+
 
 ![result](./assets/result.png)
