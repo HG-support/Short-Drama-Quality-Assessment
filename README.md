@@ -40,7 +40,7 @@ u_9 =
 \end{cases}
 $$
 
-Here, $u_9$ is the normalized score for the completion rate $x_9$ with a range of $[3, 100]$. The hot value$H$is obtained by a weighted sum of the nine indicator scores, where $\lbrace w_i \rbrace_{i=1}^9$ are their corresponding weights:
+Here, $u_9$ is the normalized score for the completion rate $x_9$ with a range of $[3, 100]$. The hot value $H$ is obtained by a weighted sum of the nine indicator scores, where $\lbrace w_i \rbrace_{i=1}^9$ are their corresponding weights:
 
 $$
 H = \sum_{i=1}^{9} w_i \cdot u_i, \quad \text{where } \sum_{i=1}^{9} w_i = 1.
@@ -93,6 +93,7 @@ python evaluation/eval.py --input_path1 YOUR_RESULT_JSON_PATH --input_path2 GT_J
 
 
 ![result](./assets/result.png)
+
 
 
 
