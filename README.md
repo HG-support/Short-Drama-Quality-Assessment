@@ -1,7 +1,3 @@
-<script type="text/javascript"
-  async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
 # Short-Drama Quality Assessment — Evaluation Set
 
 ------
@@ -22,7 +18,7 @@ Videos are collected from [Hongguo](https://novelquickapp.com/) short-drama plat
 
 ### 2. Human-Centric Quality Score
 
-We define a **hot value** derived from post-exposure user signals to measure the performance of a short drama. We normalize eight non-ratio indicators (i.e., *daily average watch time, daily average UV, favorites, likes, six-month cumulative watch time, six-month cumulative UV, comments,* and *search*) \( x_i \), to a score \( u_i \), in the range \([5, 100+)\), as defined below:
+We define a **hot value** derived from post-exposure user signals to measure the performance of a short drama. We normalize eight non-ratio indicators (i.e., *daily average watch time, daily average UV, favorites, likes, six-month cumulative watch time, six-month cumulative UV, comments,* and *search*) $x_i$, to a score \( u_i \), in the range \([5, 100+)\), as defined below:
 
 $$
 u_i =
@@ -97,3 +93,4 @@ python evaluation/eval.py --input_path1 YOUR_RESULT_JSON_PATH --input_path2 GT_J
 
 
 ![result](./assets/result.png)
+
