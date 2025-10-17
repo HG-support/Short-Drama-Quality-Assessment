@@ -1,4 +1,4 @@
-# Short-Drama Quality Assessment — Evaluation Set
+# Short-Drama Quality Assessment
 
 ------
 
@@ -93,6 +93,7 @@ python evaluation/eval.py --input_path1 YOUR_RESULT_JSON_PATH --input_path2 GT_J
 
 
 ![result](./assets/result.png)
+
 
 
 
